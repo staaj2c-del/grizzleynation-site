@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #eee;
+}
+
+header {
+  background: #220;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header .logo {
+  width: 150px;
+}
+
+header nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero, .signup, .about, .rules, .support, .links {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.btn {
+  background: #b33;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+}
