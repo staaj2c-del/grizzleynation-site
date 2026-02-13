@@ -195,6 +195,46 @@ header nav a:hover {
   font-size: 1rem;
 }
 
+.server-announcement {
+  background: linear-gradient(135deg, #111, #1f1f1f);
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.server-announcement h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f5c542; /* gold accent */
+}
+
+.server-announcement h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.server-announcement p {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.server-announcement .btn {
+  background: #f5c542;
+  color: #111;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.server-announcement .btn:hover {
+  background: #ffffff;
+  color: #000;
+}
+
 /* ===========================
    TEAM SECTIONS
 =========================== */
