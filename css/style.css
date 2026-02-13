@@ -1,42 +1,191 @@
-body {
-  font-family: Arial, sans-serif;
+/* --------------------------
+   Global Styles
+-------------------------- */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #111;
-  color: #eee;
+  font-family: Arial, sans-serif;
 }
 
+body {
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --------------------------
+   Announcement Bar
+-------------------------- */
+.announcement {
+  background-color: #ffcc00;
+  color: #000;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* --------------------------
+   Header / Navigation
+-------------------------- */
 header {
-  background: #220;
-  padding: 10px 20px;
-  text-align: center;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem 0;
 }
 
-header .logo {
-  width: 150px;
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
 }
 
-header nav a {
-  margin: 0 10px;
-  color: #fff;
+.logo {
+  height: 50px;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.hero, .signup, .about, .rules, .support, .links {
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* --------------------------
+   Hero Banner
+-------------------------- */
+.hero {
   text-align: center;
-  padding: 50px 20px;
+  position: relative;
+  padding: 2rem 1rem;
+  background-color: #222;
+  color: white;
 }
 
-.btn {
-  background: #b33;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+.hero-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
+.hero h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+/* --------------------------
+   Welcome Section
+-------------------------- */
+.welcome {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.welcome h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.welcome p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* --------------------------
+   Team Section
+-------------------------- */
+.team {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.member {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.member h3 {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.member p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* --------------------------
+   Footer
+-------------------------- */
 footer {
   text-align: center;
-  padding: 20px;
-  background: #222;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  color: white;
+  margin-top: 2rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* --------------------------
+   Responsive
+-------------------------- */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
