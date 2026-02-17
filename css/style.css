@@ -84,12 +84,12 @@ section {
 }
 
 /* ===== TEAM GRID ===== */
-.team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+.team {
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center; /* centers heading and content inside */
 }
+
 
 .member {
   background: #1c1c1c;
@@ -120,9 +120,12 @@ footer {
 .team-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* horizontal centering */
   gap: 2rem;
+  max-width: 1200px;      /* optional: keeps them inside main width */
+  margin: 0 auto;         /* centers the flex container itself */
 }
+
 
 .member {
   background-color: white;
@@ -131,7 +134,13 @@ footer {
   width: 200px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s;
+  
+  display: flex;           /* add this */
+  flex-direction: column;  /* stack content vertically */
+  align-items: center;     /* center content horizontally */
+  text-align: center;      /* optional: text centered */
 }
+
 
 .member:hover {
   transform: translateY(-5px);
